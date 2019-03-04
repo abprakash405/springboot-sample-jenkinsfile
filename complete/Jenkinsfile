@@ -10,11 +10,12 @@ pipeline {
                    sh 'echo "hello world"'
 				}
 			}
-			stage('Checkout code') {
-				steps {
-					sh 'echo "bolo"'
-				}
+		}
+		stage('Checkout code') {
+			steps {
+				sh 'echo "bolo"'
 			}
 		}
+		
 	}
 }
