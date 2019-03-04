@@ -1,0 +1,19 @@
+
+pipeline {
+    agent {
+        node { label 'ubuntu'}
+    }
+	stages {
+        stage('sample one'){
+            steps{
+                script {
+                   sh 'echo "hello world"'
+            }
+        }
+        stage('Checkout code') {
+            steps {
+                sh 'echo "bolo"'
+            }
+        }
+	}
+}
